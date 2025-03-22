@@ -41,3 +41,52 @@ int main() {
 
     return 0;
 }
+
+#include <stdio.h>
+
+int main() {
+    // Carta 1
+    char estado[30] = "Amazonas";
+    char codigodacarta[30] = "A92";
+    char nomedacidade[30] = "Manaus";
+    float pib = 250000000;
+    int populacao = 540000000;
+    float area = 125000000;
+    int numpontosturisticos = 26;
+    float densidadedapopulacao = (float)populacao / area;
+    float pibpercapita = pib / (float)populacao;
+
+    // Carta 2
+    char Estado2[30] = "Distrito Federal";
+    char codigodacarta2[30] = "B85";
+    char nomedacidade2[30] = "Brasilia";
+    float pib2 = 1700000000;
+    int populacao2 = 300000000;
+    float area2 = 580000000;
+    int numpontosturisticos2 = 15;
+    float densidadedapopulacao2 = (float)populacao2 / area2;
+    float pibpercapita2 = pib2 / (float)populacao2;
+
+    // Comparação do PIB
+    if (pib > pib2) {
+        printf("O estado de %s tem o maior PIB\n", estado);
+    } else {
+        printf("O estado de %s tem o maior PIB\n", Estado2);
+    }
+
+    // Comparação da população
+    if (populacao > populacao2) {
+        printf("O estado de %s tem a maior população\n", estado);
+    } else {
+        printf("O estado de %s tem a maior população\n", Estado2);
+        
+    }
+
+    return 0;
+
+}
+    
+
+
+
+
